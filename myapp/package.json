@@ -1,0 +1,25 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prestart": "node ./scripts/kill-port.js",
+    "start": "nodemon ./bin/www",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.6",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^9.6.2",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0",
+    "supertest": "^6.2.3"
+  }
+}
